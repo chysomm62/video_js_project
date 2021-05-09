@@ -3,6 +3,7 @@
 // The load event is fired when the whole page has loaded, including all dependent resources such as stylesheets and images.
 
 
+// switch button
 const switchBtn = document.querySelector('.switch-btn');
 const video = document.querySelector('.video-container');
 
@@ -16,3 +17,11 @@ switchBtn.addEventListener('click', () => {
         video.play();
     }
 })
+
+// preloader
+const preloader = document.querySelector('.preloader');
+
+window.addEventListener('load', () => {
+    preloader.classList.toggle('hide-preloader');
+})
+
